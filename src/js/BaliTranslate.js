@@ -1,15 +1,3 @@
-/*!
- * transliterator.js (Bali-Latin / Balinese Script to Latin)
- * https://bennylin.github.com/transliterasijawa/bali.html
- *
- * Copyright 2015, Bennylin @bennylin
- * Released under the CC-BY-SA.
- *
- * Date: 14 April 2015 - v 0.1
- *
- *
- *
- */
 // var bali2latn = {
 //     //ULU RICEM
 //     //ULU CANDRA

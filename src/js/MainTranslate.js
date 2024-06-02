@@ -1,23 +1,4 @@
-/*!
- * trans-bali.js
- * https://bennylin.github.com/transliterasijawa/bali.html
- *
- * Copyright 2013, Bennylin @bennylin
- * Dual licensed under the MIT or GPL Version 2 licenses.
- * Released under the MIT, BSD, and GPL Licenses.
- *
- * Versions:
- * 1 Juni 2016 - v 1.0
- *
- *
- * Derived with permission from Hindi Transliteration by Markandey Singh @markandey
- * http://www.purplegene.com/static/HindiTranslitration.html
- */
 var vowelPrev = false;
-/***************************
-Function SuperTrim, findstr
-trim string, menemukan karakter di dalam string
-****************************/
 function SuperTrim(str) {
   str = str || "";
   return str.replace(/^\s*|\s*$/g, "").replace(/\s+/g, " ");
@@ -26,10 +7,6 @@ function findstr(str, tofind) {
   for (var i = 0; i < str.length; i++) if (str[i] === tofind) return true;
   return false;
 }
-/***************************
-Function isDigit, isPunct, isVowel
-cek apakah digit, tanda baca, atau huruf vokal (a, e/è/é, i, o, u, ě/ê, ô, ā/ī/ū/ō)
-****************************/
 function isDigit(/*char*/ a) {
   var str = "0123456789";
   return findstr(str, a);
@@ -50,10 +27,6 @@ function isConsonant(/*char*/ a) {
   var str = "BCDfGHJKLMNPRSTVWYZbcdfghjklmnpqrstvwxyzḌḍṆṇṢṣṬṭŊŋÑñɲ"; //QXqx are special chars, add engma & enye
   return findstr(str, a);
 }
-/***************************
-Function isSpecial, isHR, isLW
-cek apakah karakter spesial (bikonsonan/cakra-pengkal/layar-cecak-wignyan/panjingan)
-****************************/
 function isSpecial(/*char*/ a) {
   var str = "GgHhRrYy"; //untuk bikonsonan th, dh, ng (nga dan cecak), ny, -r- (cakra), -y- (pengkal)
   return findstr(str, a);
@@ -70,10 +43,6 @@ function isCJ(/*char*/ a) {
   var str = "CcJj"; //untuk anuswara -nj- dan -nc-
   return findstr(str, a);
 }
-/***************************
-Function GetMatra
-apabila huruf vokal, return matra (sandhangan swara)
-****************************/
 function GetMatra(str) {
   var i = 0;
   if (str.length < 1) {

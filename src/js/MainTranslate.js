@@ -160,7 +160,7 @@ function GetShift(str) {
       //thw -- ...
       return { CoreSound: "" + GetCoreSound(str[0]).CoreSound + "ᬝ᭄ᬯ", len: 3 };
     } else {
-      return { CoreSound: "ᬝ", len: 2 };
+      return { CoreSound: "ᬝq", len: 2 };
     }
   } else if (str.indexOf("dh") === 0) {
     //suku kata diawali 'dh'

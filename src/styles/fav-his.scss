@@ -1,0 +1,18 @@
+.flex-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+    .centered-div {
+        display: flex;
+        width: 10%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    .centered-div {
+        width: 50% !important;
+    }
+}

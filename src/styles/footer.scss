@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-about, .footer-contact {
+    width: 45%;
+}
+
+.footer-about h2, .footer-contact h2 {
+    border-bottom: 2px solid #777;
+    padding-bottom: 10px;
+}
+
+.footer-about p, .footer-contact p {
+    line-height: 1.6;
+}

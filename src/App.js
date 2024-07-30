@@ -31,9 +31,10 @@ function App() {
    };
 
    useEffect(() => {
-      const normalizedText = text.replace('ě', 'x').replace('Ě', 'X').replace(/[^a-zA-Z0-9 ]/g, '').toLocaleLowerCase();
+      const normalizedText = text.replace('ě', 'x').replace('Ě', 'X').toLocaleLowerCase();
       const charList = normalizedText.split(' ');
-      const updatedList = charList?.map((char) => regex[char] || char)
+      const updatedList = charList?.map((char) => regex[char] || char);
+      charList?.forEach(char => console.log(char, regex[char]))
       switch(selectedOption) {
          case 'bahasa':
             setText(text.replace('x','ě').replace('X', 'Ě'));
@@ -57,7 +58,7 @@ function App() {
                   <div className="container-select">
                      <select value={selectedOption} onChange={handleSelectChange}>
                         <option value="" disabled>Select an option</option>
-                        <option value="bahasa">Bahasa Indonesia</option>
+                        <option value="bahasa">Latin</option>
                         <option value="english">English</option>
                         {/* <option value="aksara">Aksara Bali</option> */}
                      </select>

@@ -8,17 +8,14 @@ export const Footer = () => {
             <div class="footer-about">
                 <h2>About</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Selamat datang di situs kami, tempat di mana Anda dapat dengan mudah mengubah teks dari aksara Latin ke aksara Bali. Kami mengutamakan pelafalan dari bahasa Inggris untuk memastikan hasil transliterasi yang akurat dan mudah dipahami. Situs ini diprakarsai oleh I Wayan Mulyawan, seorang dosen sastra Inggris yang berdedikasi dalam melestarikan budaya dan bahasa Bali. Gunakan alat kami yang sederhana dan efisien untuk memudahkan konversi teks Anda.
                 </p>
             </div>
             <div class="footer-contact">
                 <h2>Contact</h2>
-                <p>Email: info@example.com</p>
-                <p>Phone: (123) 456-7890</p>
-                <p>Address: 123 Main Street, Anytown, USA</p>
+                <p>Email: info_nyastra@nyastra.co.id</p>
+                <p>Phone: +62 812-3917-724</p>
+                <p>Address: Desa/Kelurahan Kuta, Kec. Kuta, Kab. Badung, Provinsi Bali</p>
             </div>
         </div>
     </footer>

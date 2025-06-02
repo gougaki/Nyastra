@@ -51,7 +51,7 @@ function App() {
 
   return (
    <>
-   <Header />
+   {/* <Header /> */}
       <div id="container">
          <div id="main_content">
                <div id="home">

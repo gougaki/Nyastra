@@ -8,6 +8,7 @@ export const regex = {
   "kitchen": "kicen",
   "steward": "cued",
   "room": "rum",
+  "book": "buk",
   "villa": "pila",
   "suite": "suit",
   "bar": "bar",
